@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Interpretation</title>
+    <style>
+        body {
+            background: url('/static/dream_output.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            color: rgb(96, 5, 64);
+            padding: 50px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .result-box {
+            background: rgba(255, 192, 203, 0.8);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        .dream-img {
+            width: 150px;
+            height: auto;
+        }
+        .new-box {
+            background: rgba(255, 182, 193, 0.8); /* Light pink box */
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+            margin-top: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: rgb(211, 126, 184);
+            color: rgb(158, 9, 163);
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-button:hover {
+            background: rgb(205, 39, 122);
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="result-box">
+            <p style="font-size: 20px;">{{ interpretation }}</p>
+        </div>
+
+        <div class="new-box">
+            <p style="font-size: 18px; font-weight: bold;">another dream?</p>
+            <a href="/" class="back-button">click meee!!</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
